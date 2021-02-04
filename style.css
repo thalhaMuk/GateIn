@@ -1,0 +1,73 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #fff;
+	color: #DFDFDF;
+    margin: 0;
+
+    /*HAVE TO CHANE FONT*/
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    font-size: 1 rem;
+    font-weight: 400;
+	line-height: 1.6;
+}
+
+
+.intro__section{
+	color: #DFDFDF;
+	text-align: center;
+}
+
+
+.services{
+	margin-bottom: 4em;
+}
+
+.service{
+	max-width: 500px;
+	margin: 0 auto
+}
+.service p{
+    font-weight: 600;
+}
+.service h3{
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+
+.btn{
+    display: inline-block;
+	padding: 20px;
+    background: linear-gradient(90deg, rgba(52,105,186,1) 0%, rgba(45,211,177,1) 100%);
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: .8rem;
+	text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+	font-weight: 600;
+	transition: transform 200ms ease-in-out;
+}
+
+.btn:hover{
+	transform:scale(1.1);
+}
+
+
+@media (min-width: 800px){
+	.services{
+		display:flex;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.service + .service{
+		margin-left: 2em;
+	}
+}

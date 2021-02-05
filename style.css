@@ -1,19 +1,22 @@
-<<<<<<< HEAD
-html{
-	scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background: #fff;
-	color: #DFDFDF;
-    margin: 0;
+  font-family: "Roboto";
+  background: rgb(240, 240, 240);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-    /*HAVE TO CHANE FONT*/
-    font-family: 'Source Sans Pro', sans-serif;
-    
-    font-size: 1 rem;
-    font-weight: 400;
-	line-height: 1.6;
+html{
+	scroll-behavior: smooth;
 }
 
 /*###################### INTRO SECTION START ##################################3*/
@@ -30,6 +33,10 @@ body {
 .service{
 	max-width: 500px;
 	margin: 0 auto
+}
+
+.service img{
+  height: 200px;
 }
 .service p{
     font-weight: 600;
@@ -72,13 +79,11 @@ body {
 	}
 }
 
-/*###################### INTRO SECTION END ##################################3*/
+/*###################### INTRO SECTION END ##################################*/
 
 
 
-
-/*###################### FOOTER START ##################################3*/
-
+/*###################### FOOTER START ##################################*/
 .footer__line{
 	width: 80%;
 	margin: 0 auto;
@@ -236,30 +241,12 @@ body {
   background-color:#007bb6
 }
 
-@media (max-width:800px){
-  .footer__icons li.title
-  {
+@media (max-width:800px){ 
+  .footer__icons li.title {
     display:block;
     margin-right:0;
     font-weight:600
-  }
-=======
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Roboto";
-  background: rgb(240, 240, 240);
-  color: #fff;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+  }}
 /*Logo Size*/
 .banner__logo {
   height: auto;
@@ -632,5 +619,4 @@ nav {
     #2f2f5dea,
     #051434
   );
->>>>>>> 76ecca7f4010195a69094908cf666c085e1c816b
 }

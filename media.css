@@ -1,0 +1,129 @@
+/*Media Queries*/
+@media screen and (max-width: 1700px) {
+  .content__Mobile > img {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .content__Mobile > img {
+    margin-left: -100px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .content__Mobile > img {
+    display: none;
+  }
+  .textContent {
+    position: absolute;
+    top: 350%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none !important;
+    text-align: center;
+  }
+  nav .button-pop {
+    display: none;
+  }
+  .content .button-popMobile {
+    top: 60vh;
+    left: 50%;
+    display: block !important;
+    transform: translate(-50%);
+    position: absolute;
+    border-radius: 50px;
+    padding: 0.5rem 2rem 0.4rem;
+    color: white;
+    border: none;
+    outline: 0;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    line-height: 26px;
+    font-weight: bold;
+    background: rgb(54, 75, 189);
+    background: linear-gradient(
+      25deg,
+      rgba(54, 75, 189, 1) 0%,
+      rgba(44, 222, 176, 1) 100%
+    );
+  }
+  .content .button-popMobile:hover {
+    -webkit-box-shadow: 2px 7px 19px 3px rgba(0, 0, 0, 0.77);
+    box-shadow: 2px 7px 19px 3px rgba(0, 0, 0, 0.77);
+  }
+}
+@media screen and (max-width: 900px) {
+  .content .textContent > h1 {
+    font-size: 60px !important;
+  }
+  .content .textContent > h3 {
+    font-size: 20px !important;
+  }
+  .content .textContent > p {
+    font-size: 13px !important;
+  }
+  .banner__contentStore > img {
+    width: 40%;
+    height: auto;
+  }
+  .controlsButtons {
+    display: none;
+    margin: 0 !important;
+  }
+  .banner__logo {
+    height: auto;
+    width: 100px;
+  }
+  nav {
+    background-color: #051434 !important;
+    height: 8vh;
+  }
+  .banner__navLinks {
+    position: absolute;
+    right: -100%;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    background-color: #051434;
+    flex-direction: column;
+    align-items: center;
+    width: 50% !important;
+    z-index: 999;
+    transition: right 0.4s ease-in;
+  }
+  .banner__navLinks li {
+    opacity: 0;
+  }
+  .banner__navLinks a {
+    color: #fff;
+    font-size: 14px;
+  }
+  nav .banner__burger {
+    display: block;
+    cursor: pointer;
+  }
+  .intro__section .services {
+    flex-direction: column;
+    flex: 1;
+  }
+  .intro__section .services .service {
+    width: 100%;
+  }
+  .intro__section {
+    position: relative;
+    height: 150vh;
+    width: 100%;
+  }
+}
+.banner__navLinks_active {
+  right: 0%;
+}
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

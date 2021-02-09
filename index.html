@@ -4,24 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Gate In</title>
-        <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous"
-      />
-      <script src="https://kit.fontawesome.com/2e78ce6930.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="style.css">
-	
-    </head>
-    <body>
+    <title>Gate In</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="banner">
       <div class="banner__navigation">
-        <nav>
-          <img src="/assets/Logo.png" alt="logo" class="banner__logo" />
+        <nav id="navbar">
+          <img src="./images/Logo.png" alt="logo" class="banner__logo" />
           <ul class="banner__navLinks">
             <li><a href="#">Features</a></li>
-            <li><a href="#">Solution</a><span class=""></span></li>
+            <li>
+              <a href="#">Solution</a
+              ><span class="arrow_head"
+                ><img src="./images/Arrow.png" alt="logo"
+              /></span>
+            </li>
             <li><a href="#">Pricing</a></li>
           </ul>
           <div class="banner__burger">
@@ -32,199 +36,224 @@
           <button class="button button-pop">Request Demo</button>
         </nav>
       </div>
-      <div class="banner__contentMobile">
-        <img src="/assets/Mobile.png" alt="Mobile" />
-      </div>
-      <div class="slider">
-        <div class="slide current">
-          <div class="banner__overlay"></div>
-          <div class="content">
-            <h3>Your Community Mannagement</h3>
-            <h1>Solution</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-            <div class="banner__contentStore">
-              <img src="/assets/google.png" alt="google Play" class="play" />
-              <img src="/assets/apple.png" alt="Apple Store" class="apple" />
-            </div>
-          </div>
+      <div class="content">
+        <button class="buttonMobile button-popMobile">Request Demo</button>
+        <div class="content__Mobile">
+          <img src="./images/Mobile.png" alt="Mobile" />
         </div>
-        <div class="slide">
-          <div class="banner__overlay"></div>
-          <div class="content">
-            <h1>Slide Two</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="banner__overlay"></div>
-          <div class="content">
-            <h1>Slide Three</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="banner__overlay"></div>
-          <div class="content">
-            <h1>Slide Four</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="banner__overlay"></div>
-          <div class="content">
-            <h1>Slide Five</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="banner__overlay"></div>
-          <div class="content">
-            <h1>Slide Six</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
+        <div class="textContent">
+          <h3>Your Community Mannagement</h3>
+          <h1>Solution</h1>
+          <p>
+            Simplifying life within a Gated Community Enabling a safe, secure
+            and engaging community for you and your family! Take total control
+            over security and your community with GateIn A comprehensive
+            community management Software Your Community Management System
+            End-to-End Software With Features To Centralize All Aspects Of
+            Community Management
+          </p>
+          <div class="banner__contentStore">
+            <img src="./images/google.png" alt="google Play" class="play" />
+            <img src="./images/apple.png" alt="Apple Store" class="apple" />
           </div>
         </div>
       </div>
-      <div class="buttons">
-        <button id="prev"><i class="fas fa-arrow-left"></i></button>
-        <button id="next"><i class="fas fa-arrow-right"></i></button>
+      <!-- You must write number in data-change to start the change or "none" to stop the change -->
+      <div class="slider" data-change="5000">
+        <!-- write number in data-change to start the change or "none" to stop the change -->
+        <div class="item active"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="controls"></div>
+        <div class="controlsButtons">
+          <button class="prev"><i class="fa fa-chevron-left"></i></button>
+          <button class="next"><i class="fa fa-chevron-right"></i></button>
+        </div>
+        <audio src="music/song.mp3" class="sound"></audio>
       </div>
-        <section class="banner"></section>
+    </section>
+
+    <!-- TODO: Add actual content inside each service -->
+    <!-- TODO: Select proper font -->
+    <!-- TODO: Add Images -->
+    <!-- TODO: Add button naviagtion location -->
+
+    <section class="intro__section">
+      <div class="services">
+        <div class="service">
+          <img src="./images/Gate Management Pic.png" />
+          <h3>Gate Management</h3>
+          <p>
+            GateIn allows you to take total control over your check-in and
+            check-outs within your gated community. Keep track of all your
+            check-ins and checkouts with the ease of notifying your visitors to
+            the security through the GateIn app. Gatein enhances the security
+            check ins by verifying all guest and visitor entries through the
+            Gatein Security app.
+          </p>
+        </div>
+
+        <div class="service">
+          <img src="./images/Household-Management.png" />
+          <h3>Household Management</h3>
+          <p>
+            Gatein enables the owner to have total visibility in their day to
+            day household activities. Raising a complaint will be a breeze with
+            Gatein as you can easily raise complaints and track the progress.
+            Gatein also alleviates the owner from the pain of having to approve
+            regular visitors into their premises by adding them into their
+            household, allowing all working residents to be at peace as they are
+            fully aware that their family is safe and secure in their home.
+          </p>
+        </div>
+
+        <div class="service">
+          <img src="./images/Society Management Pic.png" />
+          <h3>Society Management</h3>
+          <p>
+            Gatein facilitates the committee members of the community to engage
+            and manage the communications within the community. GateIn takes the
+            hassle and headache away for the committee by providing a control
+            center through automated maintenance bill payments, digitizing
+            accounting & billing, facility booking, easy accessibility and
+            registration for owner & tenants, helpdesk & more functions at a
+            click of a button.
+          </p>
+        </div>
+      </div>
+      <!-- Where do we send this? -->
+      <button type="button" class="Learn__btn">Learn More</button>
+    </section>
+
+    <!-- TODO: Make it Resposive -->
+    <!-- TODO: Add button naviagtion location -->
+    <section class="vectorSection">
+      <div class="vetorSection__approve">
+        <div class="vectorSection__content text">
+          <h3>Approve Guests from Anywhere</h3>
+          <p>
+            Gatein community management software provides a mobile app based
+            gate management system that ensures a smooth, quick and pleasant
+            entry-exit experience to all your visitors at the same time while
+            ensuring optimum security for the premises by restricting
+            unauthorized visitors from entering.
+          </p>
+        </div>
+        <img src="./images/Approve entreis anywhere Pic.png" alt="" />
+      </div>
+      <div class="vectorSection__connect">
+        <div class="vectorSection__contentOne text">
+          <h3>Connect Seamlessly with the community</h3>
+          <p>
+            Gatein lets you have all your community related updates and
+            conversations at your fingertips! Gatein allows the committee to
+            have their important discussion relating to the community, feedback
+            on the event that was conducted recently, and even meeting minutes
+            to go unnoticed.
+          </p>
+        </div>
+        <img src="./images/Seamless Connect with the Community Pic.png" alt="" />
+      </div>
+      <div class="vectorSection__payments">
+        <div class="vectorSection__contentTwo text">
+          <h3>Connect Seamlessly with the community</h3>
+          <p>
+            Gatein lets you have all your community related updates and
+            conversations at your fingertips! Gatein allows the committee to
+            have their important discussion relating to the community, feedback
+            on the event that was conducted recently, and even meeting minutes
+            to go unnoticed.
+          </p>
+        </div>
+        <img src="./images/Hassle Free Payments.png" alt="" />
+      </div>
+    </section>
+
+    <!-- _________________________________________CALL TO ACTION___________________________________________________ -->
+
+    <section class="request__demo--wrapper">
+      <div class="request__demo--card">
+        <p class="cart__title">request a demo</p>
+        
+        
+        <div class="form__group field">                    
+          <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />          
+          <label for="name" class="form__label">Full Name</label>
+        </div>
+
+        <div class="form__group field">                    
+          <input type="email" class="form__field" placeholder="Email" name="email" id='email' required />          
+          <label for="name" class="form__label">Email</label>
+        </div>
+
+        <div class="req__actions">
+          <div class="req__button">
+            <button type="button" class="Learn__btn req__button">Request a Demo</button>
+          </div>          
+          <div class="req__number">
+            <p>or just call</p>
+            <p class="phone-num">+94 112681929</p>            
+          </div>
+        </div>
+      </div>
+      <div class="buildings">
+        <img src="./images/Buildings.png" alt="">
+      </div>
+    </section>
+
+    <!-- _________________________________FOOTER_SECTION________________________________________-->
+    <section class="footer">
+      <div class="footer__startText">
+        <h3>Together, Let’s make this work</h3>
+        <button class="buttonFooter">Request Demo</button>
+      </div><hr>
+      <div class="footer__container">
+        <div class="footer__sitemap">
+
+          <div class="col">
+            <h1>Navigation</h1>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Interations</a></li>
+              <li><a href="">Solutions</a></li>
+              <li><a href="">Marketing Guides</a></li>
+            </ul>
+          </div>
 
 
-        <!-- TODO: Add actual content inside each service -->
-        <!-- TODO: Select proper font -->
-        <!-- TODO: Add Images -->
-        <!-- TODO: Add button naviagtion location -->
-        <section class="intro__section" id="services">
-			<div class="services">
-				<div class="service">
-          <img src="assets/Gate Management Pic.png">
-					<h3>Gate Management</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-					aboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				
-				<div class="service">
-          <img src="assets/Household-Management.png">
-					<h3>Household Management</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-					aboris nisi ut aliquip ex ea commodo consequat</p>
-				</div>
-				
-				<div class="service">
-          <img src="assets/Society Management Pic.png">
-					<h3>Society Management</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-					aboris nisi ut aliquip ex ea commodo consequat</p>
-				</div>
-            </div>
-            <!-- Where do we send this? -->
-			<a href="#" class="btn">Learn More</a>
-        </section>
+          <div class="col">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="">Power tools</a></li>
+              <li><a href="">Management</a></li>
+            </ul>
+          </div>
 
-        <section class="vectors__section"></section>
-		<section class="demo__section"></section>
-		
+          <div class="col">
+            <h1><a href=""></a>Accounts</h1>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Investors</a></li>
+              <li><a href="">Media Kit</a></li>
+              <li><a href="">Partners</a></li>
+            </ul>
+          </div>
+    
+          <div class="col">
+            <h1>Contact Us</h1>
+            <ul>
+              <li>+94 77 123 4567</a></li>
+              <li><a href="">gate@in.lk</a></li>
+              <div class="icons"><i class="fab fa-facebook"></i><i class="fab fa-twitter-square"></i><i class="fab fa-instagram"></i></div>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© 2020 Gate In LLC. &nbsp;All rights reserved.
+      </div>
+    </section>
 
-
-
-
-		<section class="footer__section">©
-			  <!-- Site footer -->
-			  <footer class="footer">
-				  <hr class="footer__line">
-				<div class="container">
-				  <div class="row">
-					<div class="">
-
-				<!--	  <h6>About</h6>
-					  <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-						aboris nisi ut aliquip ex ea commodo consequat</p>
-					</div>
-		  -->
-					<div class="">
-					  <h6>Navigation</h6>
-					  <ul class="footer__links">
-						<li><a href="#services">Home</a></li>
-						<li><a href="">Features</a></li>
-						<li><a href="">Interations</a></li>
-						<li><a href="">Solutions</a></li>
-						<li><a href="">Marketing Guides</a></li>
-					  </ul>
-					</div>
-		  
-					<div class="">
-					  <h6>Quick Links</h6>
-					  <ul class="footer__links">
-						<li><a href="">Power tools</a></li>
-						<li><a href="">Management</a></li>
-					  </ul>
-					</div>
-
-
-					<div class="">
-						<h6>Company</h6>
-						<ul class="footer__links">
-							<li><a href="#services">About</a></li>
-							<li><a href="">Investors</a></li>
-							<li><a href="">Media Kit</a></li>
-							<li><a href="">Partners</a></li>
-						</ul>
-					  </div>
-				  </div>
-				  <div class="">
-					<p class="footer__copyright">Copyright &copy; 2021 All Rights Reserved by GateIn.</p>
-				  </div>
-		
-				  <div class="">
-					<ul class="footer__icons">
-					  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-					  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-					  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-					</ul>
-				  </div>
-				</div>
-			  <div class="logo">
-				  <img src="/assets/Logo.png" alt="IMG">
-				  <p>© 2021 GateIn. All Rights Reserved. Legal Stuff</p>
-			  </div>
-			  
-
-					
-		  </footer>
-
-		
-
-
-		</section>
-    <script src="main.js"></script>
-
-    </body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
-

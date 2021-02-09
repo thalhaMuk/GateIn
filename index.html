@@ -12,6 +12,7 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <section class="banner">
@@ -41,7 +42,7 @@
         <div class="content__Mobile">
           <img src="/assets/Mobile.png" alt="Mobile" />
         </div>
-        <div class="textContent">
+        <div class="textContent" data-aos="fade-up" data-aos-duration="2000">
           <h3>Your Community Mannagement</h3>
           <h1>Solution</h1>
           <p>
@@ -81,7 +82,7 @@
 
     <section class="intro__section">
       <div class="services">
-        <div class="service">
+        <div class="service" data-aos="fade-right" data-aos-duration="1000">
           <img src="assets/Gate Management Pic.png" />
           <h3>Gate Management</h3>
           <p>
@@ -94,7 +95,7 @@
           </p>
         </div>
 
-        <div class="service">
+        <div class="service" data-aos="fade-up" data-aos-duration="1000">
           <img src="assets/Household-Management.png" />
           <h3>Household Management</h3>
           <p>
@@ -108,7 +109,7 @@
           </p>
         </div>
 
-        <div class="service">
+        <div class="service" data-aos="fade-left" data-aos-duration="1000">
           <img src="assets/Society Management Pic.png" />
           <h3>Society Management</h3>
           <p>
@@ -123,14 +124,14 @@
         </div>
       </div>
       <!-- Where do we send this? -->
-      <button type="button" class="Learn__btn">Learn More</button>
+      <button type="button" class="Learn__btn" data-aos="zoom-in" data-aos-duration="500">Learn More</button>
     </section>
 
     <!-- TODO: Make it Resposive -->
     <!-- TODO: Add button naviagtion location -->
     <section class="vectorSection">
       <div class="vetorSection__approve">
-        <div class="vectorSection__content text">
+        <div class="vectorSection__content text" data-aos="fade-left" data-aos-duration="1000">
           <h3>Approve Guests from Anywhere</h3>
           <p>
             Gatein community management software provides a mobile app based
@@ -140,10 +141,10 @@
             unauthorized visitors from entering.
           </p>
         </div>
-        <img src="/assets/Approve entreis anywhere Pic.png" alt="" />
+        <img src="/assets/Approve entreis anywhere Pic.png" alt=""  data-aos="fade-right" data-aos-duration="1000"/>
       </div>
       <div class="vectorSection__connect">
-        <div class="vectorSection__contentOne text">
+        <div class="vectorSection__contentOne text" data-aos="fade-right" data-aos-duration="1000">
           <h3>Connect Seamlessly with the community</h3>
           <p>
             Gatein lets you have all your community related updates and
@@ -153,10 +154,10 @@
             to go unnoticed.
           </p>
         </div>
-        <img src="/assets/Seamless Connect with the Community Pic.png" alt="" />
+        <img src="/assets/Seamless Connect with the Community Pic.png" alt="" data-aos="fade-left" data-aos-duration="1000" />
       </div>
       <div class="vectorSection__payments">
-        <div class="vectorSection__contentTwo text">
+        <div class="vectorSection__contentTwo text" data-aos="fade-left" data-aos-duration="1000">
           <h3>Connect Seamlessly with the community</h3>
           <p>
             Gatein lets you have all your community related updates and
@@ -166,14 +167,14 @@
             to go unnoticed.
           </p>
         </div>
-        <img src="/assets/Hassle Free Payments.png" alt="" />
+        <img src="/assets/Hassle Free Payments.png" alt="" data-aos="fade-right" data-aos-duration="1000"/>
       </div>
     </section>
 
     <!-- _________________________________________CALL TO ACTION___________________________________________________ -->
 
     <section class="request__demo--wrapper">
-      <div class="request__demo--card">
+      <div class="request__demo--card" data-aos="fade-left" data-aos-duration="1000">
         <p class="cart__title">request a demo</p>
         
         
@@ -188,10 +189,10 @@
         </div>
 
         <div class="req__actions">
-          <div class="req__button">
+          <div class="req__button" data-aos="zoom-in" data-aos-duration="500" >
             <button type="button" class="Learn__btn req__button">Request a Demo</button>
           </div>          
-          <div class="req__number">
+          <div class="req__number" data-aos="fade-down" data-aos-duration="500">
             <p>or just call</p>
             <p class="phone-num">+94 112681929</p>            
           </div>
@@ -205,9 +206,9 @@
     <!-- _________________________________FOOTER_SECTION________________________________________-->
     <section class="footer">
       <div class="footer__startText">
-        <h3>Together, Let’s make this work</h3>
-        <button class="buttonFooter">Request Demo</button>
-      </div><hr>
+        <h3 data-aos="fade-right" data-aos-duration="1000">Together, Let’s make this work</h3>
+        <button class="buttonFooter" data-aos="fade-left" data-aos-duration="1000">Request Demo</button>
+      </div>
       <div class="footer__container">
         <div class="footer__sitemap">
 
@@ -253,7 +254,7 @@
         <div class="copyright">© 2020 Gate In LLC. &nbsp;All rights reserved.
       </div>
     </section>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

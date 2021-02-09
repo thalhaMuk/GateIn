@@ -21,6 +21,7 @@ const navSlide = () => {
   });
 };
 
+AOS.init();
 navSlide();
 
 let AbdelzaherSlider = document.querySelector(".slider");

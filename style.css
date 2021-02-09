@@ -8,6 +8,7 @@ body {
   font-family: "Roboto";
   color: #fff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 * {
@@ -342,8 +343,8 @@ nav {
 }
 
 .intro__section .Learn__btn:hover {
-  -webkit-box-shadow: 2px 7px 19px 3px rgba(0, 0, 0, 0.77);
-  box-shadow: 2px 7px 19px 3px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: -5px 5px 21px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 5px 21px 7px rgba(0, 0, 0, 0.2);
 }
 
 /*___________________________________________________________________VECTOR SECTION_____________________________________________________________*/
@@ -563,8 +564,8 @@ nav {
   transition: all 0.3s ease;
 }
 .req__button:hover {
-  -webkit-box-shadow: 2px 7px 19px 3px rgba(0, 0, 0, 0.77);
-  box-shadow: 2px 7px 19px 3px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: -5px 5px 21px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 5px 21px 7px rgba(0, 0, 0, 0.2);
 }
 .request__demo--wrapper .buildings {
   width: 100%;
@@ -635,12 +636,14 @@ nav {
     rgba(54, 75, 189, 1) 0%,
     rgba(44, 222, 176, 1) 100%
   );
+  transition: all 200ms ease;
 }
 .footer__startText .buttonFooter:hover {
   -webkit-box-shadow: 5px 1px 28px 5px rgba(220, 222, 255, 0.6);
   box-shadow: 5px 1px 28px 5px rgba(220, 222, 255, 0.6);
 }
 .footer__container .footer__sitemap {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   height: 100%;
   width: 80%;
   display: grid;
@@ -650,6 +653,7 @@ nav {
   padding: 10px;
 }
 .footer__sitemap .col > h1 {
+  margin-top: 50px;
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -662,12 +666,6 @@ nav {
 }
 .col li > a:hover {
   color: white;
-}
-
-.footer > hr {
-  width: 80%;
-  height: 1px;
-  color: #fff;
 }
 
 .copyright {
